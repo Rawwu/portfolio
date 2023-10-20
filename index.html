@@ -28,7 +28,8 @@
 	<div class="container">
 		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
 			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-			<span class="fs-3">Raul's World</span>
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-3">Raul's World</span>
 			</a>
 			<ul class="nav nav-pills">
 			<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
@@ -40,7 +41,7 @@
 	</div>
 	<main>
 		<!--Jumbotron - About Section-->
-		<div class="container my-5">
+		<div class="container my-5 border-bottom">
 			<div class="p-5 text-center bg-body-tertiary rounded-3">
 				<svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"/></svg>
 				<h1 class="text-body-emphasis" id="about">All about me</h1>
@@ -49,7 +50,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="b-example-divider"></div>
+
 		<!--Skills Section-->
 		<h2 class="skills-header" id="skills">Skills</h2>
 		<!--3 cards-->
@@ -76,30 +77,62 @@
 			  </div>
 			</div>
 		</div>
-		<div class="b-example-divider"></div>
+        <!--3 cards-->
+		<div class="card-deck border-bottom">
+			<div class="card">
+			  <img class="card-img-top mx-auto" src="assets/cpp.png" alt="c plus plus logo">
+			  <div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			  </div>
+			</div>
+			<div class="card">
+			  <img class="card-img-top mx-auto" src="assets/c.png" alt="c language logo">
+			  <div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+			  </div>
+			</div>
+			<div class="card">
+			  <img class="card-img-top mx-auto" src="assets/html.png" alt="HTML logo">
+			  <div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+			  </div>
+			</div>
+		</div>
+        <!--Project Section-->
 		<h2 class="skills-header" id="projects">Projects</h2>
+        <!--Project #1-->
 		<div class="project-col">
-			<div class="col-4">col-4 - Image</div>
+			<div class="col-4">
+                <img class="proj-img mx-auto" src="assets/webdev.png" alt="web dev illustration">
+            </div>
 			<div class="col-8">
 				<h5>Project #1</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
         </div>
+        <!--Project #2-->
         <div class="project-col">
-			<div class="col-4">col-4 - Image</div>
+			<div class="col-4">
+                <img class="proj-img mx-auto" src="assets/webdev.png" alt="web dev illustration">
+            </div>
 			<div class="col-8">
 				<h5>Project #2</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
         </div>
+        <!--Project #3-->
         <div class="project-col">
-			<div class="col-4">col-4 - Image</div>
+			<div class="col-4">
+                <img class="proj-img mx-auto" src="assets/webdev.png" alt="web dev illustration">
+            </div>
 			<div class="col-8">
 				<h5>Project #3</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
         </div>
-		<hr/>
 	</main>
 <script src="js/bootstrap.bundle.min.js"></script>
 
