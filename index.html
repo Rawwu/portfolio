@@ -1,140 +1,152 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="js/color-modes.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<meta name="generator" content="Hugo 0.118.2">
+		<title>Raul's World</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.118.2">
-    <title>Raul's World</title>
-
-	<!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-	<link href="css/bootstrap.min.css" rel="stylesheet">    
-  </head>
-  <body>
-
-    <!--Logo image-->
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-        <symbol id="bootstrap" viewBox="0 0 118 94">
-          <title>Bootstrap</title>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
-        </symbol>
-	</svg>
-	<!--Header bar-->
-	<div class="container">
-		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-            <span class="fs-3">Raul's World</span>
-			</a>
-			<ul class="nav nav-pills">
-			<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-			<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-			<li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-			<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-			</ul>
-		</header>
-	</div>
-	<main>
-		<!--Jumbotron - About Section-->
-		<div class="container my-5 border-bottom">
-			<div class="p-5 text-center bg-body-tertiary rounded-3">
-				<svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#bootstrap"/></svg>
-				<h1 class="text-body-emphasis" id="about">All about me</h1>
-				<p class="col-lg-8 mx-auto fs-5 text-muted">
-				This is a custom jumbotron featuring an SVG image at the top, some longer text that wraps early thanks to a responsive <code>.col-*</code> class, and a customized call to action.
-				</p>
-			</div>
+		<!-- Custom styles for this template -->
+		<link href="styles.css" rel="stylesheet">
+		<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+		<link href="css/bootstrap.min.css" rel="stylesheet">    
+	</head>
+	<body>
+		<!--Top button-->
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<!--Logo image-->
+		<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+			<symbol id="bootstrap" viewBox="0 0 118 94">
+				<title>Bootstrap</title>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+			</symbol>
+		</svg>
+		<!--Header bar-->
+		<div class="container">
+			<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+				<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+				<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+				<span class="fs-3">Raul's World</span>
+				</a>
+				<ul class="nav nav-pills">
+				<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+				<li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+				<li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+				<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+				</ul>
+			</header>
 		</div>
+		<main>
+			<!--Jumbotron - About Section-->
+			<div class="container my-5 border-bottom">
+				<div class="p-5 text-center bg-body-tertiary rounded-3">
+					<h1 class="text-body-emphasis" id="about">All about me</h1>
+					<p class="col-lg-8 mx-auto fs-5 text-muted">
+                        I'm a versatile computer science student with a diverse skill set and a passion for technology. My goal is to secure an 
+                        internship in the tech industry that will further develop my programming skills with hands-on experience. I'm committed to 
+                        continuous learning and have a desire to collaborate with talented teams.
+					</p>
+				</div>
+			</div>
 
-		<!--Skills Section-->
-		<h2 class="skills-header" id="skills">Skills</h2>
-		<!--3 cards-->
-		<div class="card-deck">
-			<div class="card">
-			  <img class="card-img-top mx-auto" src="assets/cpp.png" alt="c plus plus logo">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			  </div>
+			<!--Skills Section-->
+			<h2 class="skills-header" id="skills">Skills</h2>
+			<!--3 cards-->
+			<div class="card-deck">
+				<div class="card">
+					<img class="card-img-top mx-auto" src="assets/cpp.png" alt="c plus plus logo">
+					<div class="card-body">
+					<h5 class="card-title">C++</h5>
+					<p class="card-text"><b>Skill level:</b> Proficient</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top mx-auto" src="assets/c.png" alt="c language logo">
+					<div class="card-body">
+					<h5 class="card-title">C</h5>
+					<p class="card-text"><b>Skill level:</b> Intermediate</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top mx-auto" src="assets/javascript.png" alt="HTML logo">
+					<div class="card-body">
+					<h5 class="card-title">Javascript</h5>
+					<p class="card-text"><b>Skill level:</b> Intermediate</p>
+					</div>
+				</div>
 			</div>
-			<div class="card">
-			  <img class="card-img-top mx-auto" src="assets/c.png" alt="c language logo">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-			  </div>
+			<!--3 cards-->
+			<div class="card-deck border-bottom">
+				<div class="card">
+					<img class="card-img-top mx-auto" src="assets/html.png" alt="c plus plus logo">
+					<div class="card-body">
+					<h5 class="card-title">HTML</h5>
+					<p class="card-text"><b>Skill level:</b> Proficient</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top mx-auto" src="assets/css.png" alt="c language logo">
+					<div class="card-body">
+					<h5 class="card-title">CSS</h5>
+					<p class="card-text"><b>Skill level:</b> Intermediate</p>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-img-top mx-auto" src="assets/sql.png" alt="HTML logo">
+					<div class="card-body">
+					<h5 class="card-title">SQL</h5>
+					<p class="card-text"><b>Skill level:</b> Intermediate</p>
+					</div>
+				</div>
 			</div>
-			<div class="card">
-			  <img class="card-img-top mx-auto" src="assets/html.png" alt="HTML logo">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-			  </div>
+			<!--Project Section-->
+			<h2 class="skills-header" id="projects">Projects</h2>
+			<!--Project #1-->
+			<div class="project-col">
+				<div class="col-4">
+					<img class="proj-img mx-auto" src="assets/webdev.png" alt="web dev illustration">
+				</div>
+				<div class="col-8">
+					<h3>Library Lone System</h3>
+                    <h5>C++</h5>
+					<p> Designed and developed a system using object-oriented programming principles to design object classes for 
+                        patrons, books, and loan transactions. Implemented functions such as adding, deleting, and editing objects. Also
+                        created a database for patrons, books, and loans along with their attributes.
+                        </p>
+				</div>
 			</div>
-		</div>
-        <!--3 cards-->
-		<div class="card-deck border-bottom">
-			<div class="card">
-			  <img class="card-img-top mx-auto" src="assets/cpp.png" alt="c plus plus logo">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-			  </div>
+			<!--Project #2-->
+			<div class="project-col">
+				<div class="col-4">
+					<img class="proj-img mx-auto" src="assets/webdev.png" alt="web dev illustration">
+				</div>
+				<div class="col-8">
+					<h3>City Simulator</h3>
+                    <h5>C++</h5>
+					<p> Collaborated on a group project to implement a simulation that utilized a vector of vectors data structure to create a 
+                        map. The program simulated populations changes based on the surrounding regions and incorporated a pollution 
+                        simulation that spread based on various factors.
+                    </p>
+				</div>
 			</div>
-			<div class="card">
-			  <img class="card-img-top mx-auto" src="assets/c.png" alt="c language logo">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-			  </div>
+			<!--Project #3-->
+			<div class="project-col" id="last-proj">
+				<div class="col-4">
+					<img class="proj-img mx-auto" src="assets/webdev.png" alt="web dev illustration">
+				</div>
+				<div class="col-8">
+					<h3><a href="https://elcyber.net/">El Cyber</a></h3>
+                    <h5>Wordpress</h5>
+					<p> Started and currently maintaining a blog dedicated to computer science topics, student life experiences, and insights 
+                        for first-generation college students.</p>
+				</div>
 			</div>
-			<div class="card">
-			  <img class="card-img-top mx-auto" src="assets/html.png" alt="HTML logo">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-			  </div>
-			</div>
-		</div>
-        <!--Project Section-->
-		<h2 class="skills-header" id="projects">Projects</h2>
-        <!--Project #1-->
-		<div class="project-col">
-			<div class="col-4">
-                <img class="proj-img mx-auto" src="assets/webdev.png" alt="web dev illustration">
-            </div>
-			<div class="col-8">
-				<h5>Project #1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-        </div>
-        <!--Project #2-->
-        <div class="project-col">
-			<div class="col-4">
-                <img class="proj-img mx-auto" src="assets/webdev.png" alt="web dev illustration">
-            </div>
-			<div class="col-8">
-				<h5>Project #2</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-        </div>
-        <!--Project #3-->
-        <div class="project-col">
-			<div class="col-4">
-                <img class="proj-img mx-auto" src="assets/webdev.png" alt="web dev illustration">
-            </div>
-			<div class="col-8">
-				<h5>Project #3</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-        </div>
-	</main>
-<script src="js/bootstrap.bundle.min.js"></script>
-
-    </body>
+			<!--FIXME - Add Footer-->
+		</main>
+	<script src="js/topbtn.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>
